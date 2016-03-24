@@ -1,0 +1,40 @@
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+SHELL=/bin/bash
+30 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapegas2.py`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/1762544608803392269/events -d @- 2>&1
+30 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapesans.py`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/6787148959721951539/events -d @- 2>&1
+*/10 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapearsenal.py`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/5871511360371040661/events -d @- 2>&1
+*/5 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeise.py`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/2778552532504853796/events -d @- 2>&1
+*/5 * * * * echo "{\"value\": `/usr/bin/php /home/chad/gasbuddy/snmpgetter.php`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/3678573359633202033/events -d @- 2>&1
+*/5 * * * * echo "{\"value\": `/usr/bin/php /home/chad/gasbuddy/snmpgetterwireless.php secure`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/6156603843285555446/events -d @- 2>&1
+*/5 * * * * echo "{\"value\": `/usr/bin/php /home/chad/gasbuddy/snmpgetterwireless.php guest`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/6420632114485862311/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeslate.py Apps`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/5933829136172006277/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeslate.py Admits`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/778626925246079107/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeslate.py Deposits`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/1019770125584739773/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeslate.py NetDeposits`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/130222440034290497/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeslate.py Housing`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/7766305800880903662/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeslate.py NSR`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/3078070777631470985/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapeslate.py Enrolled`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/3074189648088763675/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapetrello2.py hours`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/2758387803470911797/events -d @- 2>&1
+0 * * * * echo "{\"value\": `/usr/bin/python /home/chad/gasbuddy/scrapetrello2.py prio`}" | curl -u nmrs_Vg6wY3OvEAhh: https://api.numerousapp.com/v2/metrics/4782862753767787917/events -d @- 2>&1
+
